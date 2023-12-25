@@ -1,0 +1,21 @@
+# XcodeGen spec:
+# https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md
+
+name: terminal23
+options:
+  bundleIdPrefix: dev.hyzyla
+
+packages:
+  swift-markdown-ui:
+    url: https://github.com/gonzalezreal/swift-markdown-ui
+    from: 2.0.2
+targets:
+  terminal23:
+    # Info.plist
+    info:
+      path: terminal23/Info.plist
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - terminal23

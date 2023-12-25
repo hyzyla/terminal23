@@ -1,17 +1,10 @@
-//
-//  ContentView.swift
-//  terminal23
-//
-//  Created by Yevhenii Hyzyla on 22.04.2023.
-//
-
 import SwiftUI
 
 struct ListHeader: View {
   var body: some View {
     HStack {
       Image(systemName: "airplane.departure")
-      Text("Terminal 23").font(.largeTitle)
+      Text("Terminal B").font(.largeTitle)
     }
   }
 }
