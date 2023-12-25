@@ -8,8 +8,8 @@
 import Foundation
 
 struct Post: Identifiable {
-    let id: UUID
-    let title: String
-    let content: String
-    let lastUpdated: Date
+  let id: UUID
+  let title: String
+  let content: String
+  let lastUpdated: Date
 }
