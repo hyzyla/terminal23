@@ -11,6 +11,10 @@
 		DC698B5B29F3D72800169C99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B5A29F3D72800169C99 /* ContentView.swift */; };
 		DC698B5D29F3D72900169C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC698B5C29F3D72900169C99 /* Assets.xcassets */; };
 		DC698B6029F3D72900169C99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC698B5F29F3D72900169C99 /* Preview Assets.xcassets */; };
+		DC698B6729F3D8FE00169C99 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B6629F3D8FE00169C99 /* Blog.swift */; };
+		DC698B6929F3D91600169C99 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B6829F3D91600169C99 /* Post.swift */; };
+		DC698B6B29F3D94400169C99 /* BlogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B6A29F3D94400169C99 /* BlogDetailView.swift */; };
+		DC698B6E29F482D300169C99 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DC698B6D29F482D300169C99 /* MarkdownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		DC698B5A29F3D72800169C99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC698B5C29F3D72900169C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC698B5F29F3D72900169C99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC698B6629F3D8FE00169C99 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		DC698B6829F3D91600169C99 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DC698B6A29F3D94400169C99 /* BlogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC698B6E29F482D300169C99 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 			children = (
 				DC698B5829F3D72800169C99 /* terminal23App.swift */,
 				DC698B5A29F3D72800169C99 /* ContentView.swift */,
+				DC698B6A29F3D94400169C99 /* BlogDetailView.swift */,
+				DC698B6629F3D8FE00169C99 /* Blog.swift */,
+				DC698B6829F3D91600169C99 /* Post.swift */,
 				DC698B5C29F3D72900169C99 /* Assets.xcassets */,
 				DC698B5E29F3D72900169C99 /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = terminal23;
+			packageProductDependencies = (
+				DC698B6D29F482D300169C99 /* MarkdownUI */,
+			);
 			productName = terminal23;
 			productReference = DC698B5529F3D72800169C99 /* terminal23.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = DC698B4C29F3D72800169C99;
+			packageReferences = (
+				DC698B6C29F482D300169C99 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+			);
 			productRefGroup = DC698B5629F3D72800169C99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC698B6B29F3D94400169C99 /* BlogDetailView.swift in Sources */,
+				DC698B6729F3D8FE00169C99 /* Blog.swift in Sources */,
 				DC698B5B29F3D72800169C99 /* ContentView.swift in Sources */,
 				DC698B5929F3D72800169C99 /* terminal23App.swift in Sources */,
+				DC698B6929F3D91600169C99 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC698B6C29F482D300169C99 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui#installation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC698B6D29F482D300169C99 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC698B6C29F482D300169C99 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC698B4D29F3D72800169C99 /* Project object */;
 }
