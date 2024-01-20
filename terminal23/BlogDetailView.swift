@@ -16,13 +16,11 @@ struct BlogDetailView: View {
       VStack(alignment: .leading, spacing: 20) {
         ForEach(blog.posts) { post in
           VStack(alignment: .leading) {
-            Markdown(post.content)
-              .markdownTextStyle(\.text) {
-                FontSize(16)
-
-              }
-            Divider()
+            Markdown(post.content).markdownTextStyle(\.text) {
+              FontSize(16)
+            }
             HStack {
+              Divider()
               Image(systemName: "bubble.left")
               Text("Залишити коментар")
               Spacer()
