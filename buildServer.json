@@ -1,0 +1,11 @@
+{
+  "name": "xcode build server",
+  "version": "0.2",
+  "bspVersion": "2.0",
+  "languages": ["c", "cpp", "objective-c", "objective-cpp", "swift"],
+  "argv": ["/usr/local/bin/xcode-build-server"],
+  "workspace": "/Users/hyzyla/Developer/terminal23/terminal23.xcodeproj/project.xcworkspace",
+  "build_root": "/Users/hyzyla/Library/Developer/Xcode/DerivedData/terminal23-bfimmseacjlxwqckkdazsxgeemzw",
+  "scheme": "terminal23",
+  "kind": "xcode"
+}

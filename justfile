@@ -31,3 +31,9 @@ regenerate-xcodeproj:
     xcodegen generate
 
 try: regenerate-xcodeproj build-and-run
+
+xcode-build-server:
+    xcode-build-server config -workspace terminal23.xcodeproj/project.xcworkspace -scheme terminal23
+
+build-server:
+    rm -rf .bundle .bundle.xcresult; xcodebuild -workspace terminal23.xcodeproj/project.xcworkspace  -scheme terminal23 -destination 'generic/platform=iOS Simulator' -resultBundlePath .bundle build

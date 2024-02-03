@@ -15,6 +15,7 @@ struct ContentView: View {
     Blog(
       id: UUID(), name: "Українські Кулінарні Традиції",
       posts: [
+
         Post(
           id: UUID(), title: "Топ-5 традиційних українських страв",
           content:

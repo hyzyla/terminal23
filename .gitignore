@@ -1,2 +1,5 @@
 .build/
 .vscode/
+.index-store/
+.bundle
+.bundle.xcresult/
