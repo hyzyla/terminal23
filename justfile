@@ -36,4 +36,5 @@ xcode-build-server:
     xcode-build-server config -workspace terminal23.xcodeproj/project.xcworkspace -scheme terminal23
 
 build-server:
-    rm -rf .bundle .bundle.xcresult; xcodebuild -workspace terminal23.xcodeproj/project.xcworkspace  -scheme terminal23 -destination 'generic/platform=iOS Simulator' -resultBundlePath .bundle build
+    set TERM=dumb
+    rm -rf '/Users/hyzyla/Library/Application Support/Code/User/workspaceStorage/97c65aa4ba8e014c103472b21f1e58a0/sweetpad.sweetpad/bundle/terminal23'; set -o pipefail && xcodebuild -scheme terminal23 -sdk iphonesimulator -configuration Debug -workspace /Users/hyzyla/Developer/terminal23/terminal23.xcodeproj/project.xcworkspace -destination 'generic/platform=iOS Simulator' -resultBundlePath '/Users/hyzyla/Library/Application Support/Code/User/workspaceStorage/97c65aa4ba8e014c103472b21f1e58a0/sweetpad.sweetpad/bundle/terminal23' -allowProvisioningUpdates build | unbuffer -p xcbeautify

@@ -10,5 +10,5 @@ import Foundation
 struct Blog: Identifiable {
   let id: UUID
   let name: String
-  let posts: [Post]
+  let posts: [Post] 
 }

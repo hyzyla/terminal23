@@ -4,7 +4,7 @@ struct ListHeader: View {
   var body: some View {
     HStack {
       Image(systemName: "airplane.departure")
-      Text("Terminal B").font(.largeTitle)
+      Text("Terminal B").font(.title)
     }
   }
 }
@@ -17,7 +17,7 @@ struct ContentView: View {
       posts: [
 
         Post(
-          id: UUID(), title: "Топ-5 традиційних українських страв",
+          id: UUID(), title: "Топ-5 традиційнs√их українських страв",
           content:
             "Українська кухня славиться своєю різноманітністю та смачними стравами. У цій статті ми розглянемо топ-5 традиційних українських страв, які варто спробувати...",
           lastUpdated: Date().addingTimeInterval(-60000)),

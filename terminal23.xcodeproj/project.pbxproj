@@ -15,7 +15,18 @@
 		DC698B6729F3D8FE00169C99 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B6629F3D8FE00169C99 /* Blog.swift */; };
 		DC698B6929F3D91600169C99 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B6829F3D91600169C99 /* Post.swift */; };
 		DC698B6B29F3D94400169C99 /* BlogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC698B6A29F3D94400169C99 /* BlogDetailView.swift */; };
+		DCD5BA9E2C30043B0079F262 /* terminal23Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5BA9D2C30043B0079F262 /* terminal23Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCD5BA9F2C30043B0079F262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC698B4D29F3D72800169C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC698B5429F3D72800169C99;
+			remoteInfo = terminal23;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DC698B5529F3D72800169C99 /* terminal23.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = terminal23.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +37,8 @@
 		DC698B6629F3D8FE00169C99 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		DC698B6829F3D91600169C99 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DC698B6A29F3D94400169C99 /* BlogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogDetailView.swift; sourceTree = "<group>"; };
+		DCD5BA9B2C30043B0079F262 /* terminal23Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = terminal23Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD5BA9D2C30043B0079F262 /* terminal23Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = terminal23Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCD5BA982C30043B0079F262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				DC698B5729F3D72800169C99 /* terminal23 */,
+				DCD5BA9C2C30043B0079F262 /* terminal23Tests */,
 				DC698B5629F3D72800169C99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				DC698B5529F3D72800169C99 /* terminal23.app */,
+				DCD5BA9B2C30043B0079F262 /* terminal23Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +100,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DCD5BA9C2C30043B0079F262 /* terminal23Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCD5BA9D2C30043B0079F262 /* terminal23Tests.swift */,
+			);
+			path = terminal23Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,6 +131,24 @@
 			productReference = DC698B5529F3D72800169C99 /* terminal23.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DCD5BA9A2C30043B0079F262 /* terminal23Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD5BAA32C30043B0079F262 /* Build configuration list for PBXNativeTarget "terminal23Tests" */;
+			buildPhases = (
+				DCD5BA972C30043B0079F262 /* Sources */,
+				DCD5BA982C30043B0079F262 /* Frameworks */,
+				DCD5BA992C30043B0079F262 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD5BAA02C30043B0079F262 /* PBXTargetDependency */,
+			);
+			name = terminal23Tests;
+			productName = terminal23Tests;
+			productReference = DCD5BA9B2C30043B0079F262 /* terminal23Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -108,11 +156,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					DC698B5429F3D72800169C99 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					DCD5BA9A2C30043B0079F262 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = DC698B5429F3D72800169C99;
 					};
 				};
 			};
@@ -133,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				DC698B5429F3D72800169C99 /* terminal23 */,
+				DCD5BA9A2C30043B0079F262 /* terminal23Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +197,13 @@
 			files = (
 				DC698B6029F3D72900169C99 /* Preview Assets.xcassets in Resources */,
 				DC698B5D29F3D72900169C99 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCD5BA992C30043B0079F262 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +222,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DCD5BA972C30043B0079F262 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD5BA9E2C30043B0079F262 /* terminal23Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCD5BAA02C30043B0079F262 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC698B5429F3D72800169C99 /* terminal23 */;
+			targetProxy = DCD5BA9F2C30043B0079F262 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DC698B6129F3D72900169C99 /* Debug */ = {
@@ -339,6 +415,53 @@
 			};
 			name = Release;
 		};
+		DCD5BAA12C30043B0079F262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L67B2KQU8K;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hyzyla.terminal23Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/terminal23.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/terminal23";
+			};
+			name = Debug;
+		};
+		DCD5BAA22C30043B0079F262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L67B2KQU8K;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hyzyla.terminal23Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/terminal23.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/terminal23";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,12 +483,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DCD5BAA32C30043B0079F262 /* Build configuration list for PBXNativeTarget "terminal23Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD5BAA12C30043B0079F262 /* Debug */,
+				DCD5BAA22C30043B0079F262 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		DC3FF2602B6DA2720007D6F5 /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui#installation";
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.3.0;

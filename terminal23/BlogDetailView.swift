@@ -5,6 +5,7 @@
 //  Created by Yevhenii Hyzyla on 22.04.2023.
 //
 
+import Foundation
 import MarkdownUI
 import SwiftUI
 
@@ -52,7 +53,10 @@ struct BlogDetailView: View {
       ToolbarItemGroup(placement: .navigationBarTrailing) {
 
         Menu {
-          Button(action: {}) {
+          Button(action: {
+            var text = ""
+            print("Create a file 😖💅🏼🙅‍♀️")
+          }) {
             Label("Create a file", systemImage: "doc")
           }
 
